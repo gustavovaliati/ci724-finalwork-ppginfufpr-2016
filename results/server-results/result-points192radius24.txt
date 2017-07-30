@@ -1,0 +1,33 @@
+{'gamma': 8.0, 'C': 512.0, 'kernel': 'poly'}
+Predicting...
+Classification SVC(C=512.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=8.0, kernel='poly',
+  max_iter=-1, probability=True, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+             precision    recall  f1-score   support
+
+          0       0.05      0.06      0.06        84
+          1       0.00      0.00      0.00        84
+          2       0.00      0.00      0.00        84
+          3       0.02      0.02      0.02        84
+          4       0.00      0.00      0.00        84
+          5       0.00      0.00      0.00        84
+          6       0.05      0.05      0.05        84
+          7       0.03      0.02      0.02        84
+          8       0.02      0.02      0.02        84
+          9       0.77      0.68      0.72        84
+
+avg / total       0.09      0.09      0.09       840
+
+
+Confusion matrix:
+[[ 5  1  1  0 63  0  3  7  4  0]
+ [ 8  0  1  7  2  1 54  4  5  2]
+ [69  0  0  2  4  0  1  4  4  0]
+ [ 3  2  3  2 12  0  2 57  2  1]
+ [ 0  2 52  8  0  0  2  2 11  7]
+ [ 5  2 10  4  4  0  9  0 47  3]
+ [ 5  0  2 65  1  0  4  0  6  1]
+ [ 0  6  1  0  0 73  0  2  0  2]
+ [ 1 69  1  0  1  5  1  3  2  1]
+ [ 0  3  5  3  1  6  6  0  3 57]]

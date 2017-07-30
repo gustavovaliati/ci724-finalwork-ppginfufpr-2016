@@ -1,0 +1,38 @@
+Loading dataset: original_jpg_structured_test-only/
+{'Cedrelinga': 4, 'Cecropia': 2, 'Combretum': 6, 'Apuleia': 1, 'Copaifera': 3, 'Byrsonima': 0, 'Calophyllum': 7, 'Cochlospermum': 9, 'Aspidosperma': 5, 'Astronium': 8}
+Loaded: 840 (840, 2)
+Training...
+0 Byrsonima
+Predicting...
+Classification SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+             precision    recall  f1-score   support
+
+          0       0.29      0.19      0.23        84
+          1       0.18      0.38      0.25        84
+          2       0.17      0.05      0.07        84
+          3       0.29      0.33      0.31        84
+          4       0.00      0.00      0.00        84
+          5       0.22      0.31      0.26        84
+          6       0.62      0.15      0.25        84
+          7       0.00      0.00      0.00        84
+          8       0.36      0.76      0.48        84
+          9       0.18      0.37      0.24        84
+
+avg / total       0.23      0.25      0.21       840
+
+
+Confusion matrix:
+[[16 20  3  0  0 20  0  0  1 24]
+ [ 3 32  2  9  0 17  0  0  4 17]
+ [11 15  4  4  0 19  0  0 12 19]
+ [ 0 20  7 28  0  2  2  0 14 11]
+ [ 3 12  0 12  0  5  0  1 29 22]
+ [ 6 25  0  0  0 26  0  0 11 16]
+ [ 2 10  5 21  0  2 13  0 26  5]
+ [ 4 14  2 16  0 15  5  0 11 17]
+ [ 1  4  0  6  0  0  1  0 64  8]
+ [10 22  0  1  1 11  0  0  8 31]]
+

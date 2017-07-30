@@ -1,0 +1,32 @@
+Classification LinearSVC(C=100.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=42, tol=0.0001,
+     verbose=0):
+             precision    recall  f1-score   support
+
+          0       0.07      0.07      0.07        84
+          1       0.00      0.00      0.00        84
+          2       0.01      0.01      0.01        84
+          3       0.77      0.96      0.86        84
+          4       0.15      0.19      0.17        84
+          5       0.00      0.00      0.00        84
+          6       0.00      0.00      0.00        84
+          7       0.03      0.02      0.03        84
+          8       0.34      0.45      0.39        84
+          9       0.00      0.00      0.00        84
+
+avg / total       0.14      0.17      0.15       840
+
+
+Confusion matrix:
+[[ 6  2  1  2  0  8  0  1 64  0]
+ [ 6  0  4  4 13  3  1  5  0 48]
+ [ 0  0  1  1  0 80  0  0  0  2]
+ [ 0  0  1 81  0  2  0  0  0  0]
+ [ 0  0  0  0 16  1  2 47 10  8]
+ [ 0  0  2  1 74  0  2  1  0  4]
+ [ 2  1 57 12  0 12  0  0  0  0]
+ [ 5 75  0  2  0  0  0  2  0  0]
+ [ 0  0  0  1  1  4 22 14 38  4]
+ [68 12  3  1  0  0  0  0  0  0]]
+

@@ -1,0 +1,34 @@
+[Parallel(n_jobs=12)]: Done 810 out of 810 | elapsed:  1.8min finished
+{'gamma': 8.0, 'C': 2048.0, 'kernel': 'poly'}
+Predicting...
+Classification SVC(C=2048.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=8.0, kernel='poly',
+  max_iter=-1, probability=True, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+               precision    recall  f1-score   support
+
+      Apuleia       0.83      0.89      0.86        84
+ Aspidosperma       0.80      0.93      0.86        84
+    Astronium       0.77      0.81      0.79        84
+    Byrsonima       0.93      0.77      0.84        84
+  Calophyllum       0.99      0.88      0.93        84
+     Cecropia       0.88      0.89      0.89        84
+   Cedrelinga       0.86      0.83      0.85        84
+Cochlospermum       0.94      0.95      0.95        84
+    Combretum       0.94      0.94      0.94        84
+    Copaifera       0.89      0.90      0.90        84
+
+  avg / total       0.88      0.88      0.88       840
+
+
+Confusion matrix:
+[[75  0  5  0  0  0  0  0  0  4]
+ [ 0 78  0  3  0  3  0  0  0  0]
+ [ 7  0 68  0  0  3  2  0  4  0]
+ [ 0 11  1 65  0  0  4  0  0  3]
+ [ 5  2  0  0 74  1  0  0  0  2]
+ [ 0  2  2  0  0 75  0  5  0  0]
+ [ 0  1 12  1  0  0 70  0  0  0]
+ [ 0  1  0  0  0  3  0 80  0  0]
+ [ 0  2  0  0  1  0  2  0 79  0]
+ [ 3  0  0  1  0  0  3  0  1 76]]

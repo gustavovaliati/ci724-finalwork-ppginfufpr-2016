@@ -1,0 +1,36 @@
+Predicting...
+/usr/local/lib/python3.4/dist-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being 
+set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+Classification LinearSVC(C=3, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=42, tol=0.0001,
+     verbose=0):
+             precision    recall  f1-score   support
+
+          0       0.07      0.12      0.09        84
+          1       0.00      0.00      0.00        84
+          2       0.10      0.08      0.09        84
+          3       0.00      0.00      0.00        84
+          4       0.16      0.55      0.24        84
+          5       0.00      0.00      0.00        84
+          6       0.00      0.00      0.00        84
+          7       0.01      0.01      0.01        84
+          8       0.52      0.37      0.43        84
+          9       0.00      0.00      0.00        84
+
+avg / total       0.09      0.11      0.09       840
+
+
+Confusion matrix:
+[[10  0  3  1 13  0  9 47  1  0]
+ [ 3  0  2  2 43  0  1  0  6 27]
+ [ 1  0  7 22 16  4  5  0 19 10]
+ [ 1  0  0  0 83  0  0  0  0  0]
+ [ 1  0  2  3 46 18  0 13  1  0]
+ [69  0  0  0 11  0  4  0  0  0]
+ [ 8  0  0 10 39 15  0  7  2  3]
+ [ 4  0 53  0 26  0  0  1  0  0]
+ [32  0  0  1 15  2  2  1 31  0]
+ [ 9  0  0  0  0  0 74  1  0  0]]
+

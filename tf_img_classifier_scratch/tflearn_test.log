@@ -1,0 +1,43 @@
+50 epochs * 67 segundos
+
+Downloading CIFAR 10, Please wait...
+100.0% 170500096 / 170498071
+('Succesfully downloaded', 'cifar-10-python.tar.gz', 170498071, 'bytes.')
+File Extracted in Current Directory
+2017-07-23 14:21:31.677805: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but
+these are available on your machine and could speed up CPU computations.
+2017-07-23 14:21:31.677843: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but
+these are available on your machine and could speed up CPU computations.
+2017-07-23 14:21:31.677849: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but the
+se are available on your machine and could speed up CPU computations.
+2017-07-23 14:21:31.677858: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but th
+ese are available on your machine and could speed up CPU computations.
+2017-07-23 14:21:31.677865: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but the
+se are available on your machine and could speed up CPU computations.
+2017-07-23 14:21:31.804031: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), b
+ut there must be at least one NUMA node, so returning NUMA node zero
+2017-07-23 14:21:31.804456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties:
+name: GeForce 830M
+major: 5 minor: 0 memoryClockRate (GHz) 1.15
+pciBusID 0000:08:00.0
+Total memory: 1.96GiB
+Free memory: 1.58GiB
+2017-07-23 14:21:31.804487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0
+2017-07-23 14:21:31.804496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y
+2017-07-23 14:21:31.804507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce 8
+30M, pci bus id: 0000:08:00.0)
+2017-07-23 14:21:32.964022: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce 8
+30M, pci bus id: 0000:08:00.0)
+---------------------------------
+Run id: cifar10_cnn
+Log directory: /tmp/tflearn_logs/
+---------------------------------
+Training samples: 50000
+Validation samples: 10000
+--
+Training Step: 521  | total loss: 1.22004 | time: 68.724s
+| Adam | epoch: 001 | loss: 1.22004 - acc: 0.5714 | val_loss: 1.15574 - val_acc: 0.5860 -- iter: 50000/50000
+
+Training Step: 26050  | total loss: 0.08181 | time: 64.909s
+| Adam | epoch: 050 | loss: 0.08181 - acc: 0.9748 | val_loss: 1.61971 - val_acc: 0.7479 -- iter: 50000/50000
+--

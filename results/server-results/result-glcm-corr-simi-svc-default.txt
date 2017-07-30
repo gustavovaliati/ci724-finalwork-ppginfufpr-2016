@@ -1,0 +1,33 @@
+Classification SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+             precision    recall  f1-score   support
+
+          0       0.62      0.19      0.29        84
+          1       0.11      0.23      0.15        84
+          2       0.00      0.00      0.00        84
+          3       0.06      0.04      0.04        84
+          4       0.00      0.00      0.00        84
+          5       0.06      0.13      0.08        84
+          6       0.00      0.00      0.00        84
+          7       0.11      0.23      0.15        84
+          8       0.33      0.01      0.02        84
+          9       0.01      0.01      0.01        84
+
+avg / total       0.13      0.08      0.08       840
+
+
+Confusion matrix:
+[[16  7  5  2  2 26  0  5  1 20]
+ [ 3 19  7  0  2 14  0 11  0 28]
+ [ 0 25  0  6 26 11  0 16  0  0]
+ [ 0 32  2  3 17  4  1 17  0  8]
+ [ 1  4  0  1  0 64  0  8  0  6]
+ [ 5 14  3  3 15 11  0 17  1 15]
+ [ 0 20  3 16 20  1  0 24  0  0]
+ [ 1 14  4 11 19 12  0 19  0  4]
+ [ 0 12  0  3  5 30  0 22  1 11]
+ [ 0 22  1  9 11  9  0 31  0  1]]
+
+
