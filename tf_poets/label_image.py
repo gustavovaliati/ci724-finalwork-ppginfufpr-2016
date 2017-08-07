@@ -6,11 +6,13 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 ap = argparse.ArgumentParser()
 
 ap.add_argument("-dte", "--dataset-test",
-                required = False,
+                required = True,
                 help = "The dataset for testing.",
                 dest='test_dir')
 args = vars(ap.parse_args())
-testing_images = glob.glob(args['test_dir'] + "**/*.jpg")
+target_regex = os.path.join(args['test_dir'], "**/*.jpg")
+testing_images = glob.glob(target_regex)
+print(len(testing_images))
 mistakes = 0
 labels = []
 predicted = []
@@ -26,7 +28,7 @@ with tf.gfile.FastGFile("retrained_graph.pb", 'rb') as f:
     with tf.Session() as sess:
         for image_path in testing_images:
 
-            print(image_path)
+            # print(image_path)
             file_name = os.path.basename(image_path)
             class_name = file_name.split("_")[0].lower()
 
@@ -42,20 +44,25 @@ with tf.gfile.FastGFile("retrained_graph.pb", 'rb') as f:
             top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
 
             node_id = top_k[0]
+            score = predictions[0][node_id]
             pred = label_lines[node_id]
             predicted.append(pred)
             labels.append(class_name)
+
+            must_print = False
             if class_name != pred:
+                must_print = True
                 mistakes = mistakes + 1
-                print("Mistake")
-
-            for i, node_id in enumerate(top_k):
-                if i > 3:
-                    break
-                human_string = label_lines[node_id]
-                score = predictions[0][node_id]
-                print('%s (score = %.5f)' % (human_string, score))
-
+                print('Mistake for: true: %s label: %s (score = %.5f)' % (file_name, pred, score))
+            elif score < 0.7:
+                must_print = True
+                print('OK but low score for: %s (score = %.5f)' % (pred, score))
+            if must_print:
+                for i, node_id in enumerate(top_k):
+                    if i > 3:
+                        break
+                    score = predictions[0][node_id]
+                    print('%s (score = %.5f)' % (pred, score))
 
 testing_images_count = len(testing_images)
 print("Classification:\n %s\n" % (metrics.classification_report(labels, predicted)))

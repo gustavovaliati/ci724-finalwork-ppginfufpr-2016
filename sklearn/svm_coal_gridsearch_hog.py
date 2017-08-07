@@ -5,6 +5,7 @@ import numpy as np
 from sklearn import datasets, svm, metrics
 from sklearn.externals import joblib
 from sklearn.grid_search import GridSearchCV
+from sklearn.neighbors import KNeighborsClassifier
 from skimage import feature
 
 
@@ -59,7 +60,7 @@ def GridSearch(X_train, y_train):
         srv = svm.SVC(probability=True)
 
         # faz a busca
-        grid = GridSearchCV(srv, param_grid, n_jobs=10, verbose=True)
+        grid = GridSearchCV(srv, param_grid, n_jobs=12, verbose=True)
         grid.fit (X_train, y_train)
 
         # recupera o melhor modelo
@@ -72,7 +73,7 @@ def GridSearch(X_train, y_train):
 def load_dataset(dataset_dir):
     print("Loading dataset:",dataset_dir)
     dataset = {"images" : [] , "labels": [], "class_name": []}
-    class_map = {}
+    # class_map = {}
     counter = 0
     images = glob.glob(dataset_dir + "/**/*.jpg")
 
@@ -82,27 +83,17 @@ def load_dataset(dataset_dir):
 
         file_name = os.path.basename(img_path)
         class_name = file_name.split("_")[0]
-        label = False
-        if class_name in class_map:
-            label = class_map[class_name]
-        else:
-            class_map[class_name] = label = counter
-            counter += 1
 
-        # dataset["images"].append(plt.imread(img_path))
         im = plt.imread(img_path)
-        new_array = feature.hog(im)
-        (hist, _)  = np.histogram(new_array)
-        # print(hist)
-        # sys.exit()
-        dataset["images"].append(hist)
-        dataset["labels"].append(label)
-        dataset["class_name"].append(class_name)
+        feats = feature.hog(im, orientations=9, pixels_per_cell=(16, 16), cells_per_block=(3, 3))
+        dataset["images"].append(feats)
+        dataset["labels"].append(class_name)
+        # dataset["class_name"].append(class_name)
 
     dataset["images"] = np.array(dataset["images"])
     dataset["labels"] = np.array(dataset["labels"])
-    dataset["class_map"] = class_map
-    print(class_map)
+    # dataset["class_map"] = class_map
+    # print(class_map)
 
     return dataset
 
@@ -113,8 +104,8 @@ elif(args['need_train']):
     train_dataset = load_dataset(args['train_dir'])
     n_samples = len(train_dataset["images"])
     print("Loaded:", n_samples, train_dataset["images"].shape)
-    with open('class_map_train_'+now.strftime("%Y-%m-%d_%H%M%S")+'.json', 'w') as f:
-        json.dump(train_dataset['class_map'], f)
+    # with open('class_map_train_'+now.strftime("%Y-%m-%d_%H%M%S")+'.json', 'w') as f:
+    #     json.dump(train_dataset['class_map'], f)
 else:
     print("Error: No classifier or training dataset specified");
     sys.exit()
@@ -123,21 +114,39 @@ if(args['need_test']):
     test_dataset = load_dataset(args['test_dir'])
     n_samples = len(test_dataset["images"])
     print("Loaded:", n_samples, test_dataset['images'].shape)
-    with open('class_map_test_'+now.strftime("%Y-%m-%d_%H%M%S")+'.json', 'w') as f:
-        json.dump(test_dataset['class_map'], f)
+    # with open('class_map_test_'+now.strftime("%Y-%m-%d_%H%M%S")+'.json', 'w') as f:
+    #     json.dump(test_dataset['class_map'], f)
 
 if args['need_train'] and 'classifier' not in locals():
     print("Training...")
-    print(train_dataset["labels"][0], train_dataset["class_name"][0])
+    # print(train_dataset["labels"][0], train_dataset["class_name"][0])
     # classifier = svm.SVC(C=2.8, gamma=.0073)
     # classifier = svm.LinearSVC(C=3, random_state=42)
     # classifier = GridSearch(train_dataset["images"], train_dataset["labels"])
-    classifier = svm.SVC()
-    classifier.fit(train_dataset["images"], train_dataset["labels"])
-    joblib.dump(classifier, 'classifier_'+now.strftime("%Y-%m-%d_%H%M%S")+'.pkl')
+    # classifier = svm.SVC()
+    # # classifier.fit(train_dataset["images"], train_dataset["labels"])
+    # # joblib.dump(classifier, 'classifier_'+now.strftime("%Y-%m-%d_%H%M%S")+'.pkl')
+    #
+    # print("Predicting...SVM DEFAULT")
+    # predicted = classifier.predict(test_dataset["images"])
+    # print("Classification %s:\n%s\n"
+    # % (classifier, metrics.classification_report(test_dataset["labels"], predicted)))
+    # print("Confusion matrix:\n%s" % metrics.confusion_matrix(test_dataset["labels"], predicted))
 
-if args['need_test']:
-    print("Predicting...")
+    classifier = KNeighborsClassifier(n_neighbors=3)
+    classifier.fit(train_dataset["images"], train_dataset["labels"])
+
+
+    print("Predicting...KNN")
+    predicted = classifier.predict(test_dataset["images"])
+    print("Classification %s:\n%s\n"
+    % (classifier, metrics.classification_report(test_dataset["labels"], predicted)))
+    print("Confusion matrix:\n%s" % metrics.confusion_matrix(test_dataset["labels"], predicted))
+
+    classifier = GridSearch(train_dataset["images"], train_dataset["labels"])
+    classifier.fit(train_dataset["images"], train_dataset["labels"])
+
+    print("Predicting...SVM GRIDSEARCH")
     predicted = classifier.predict(test_dataset["images"])
     print("Classification %s:\n%s\n"
     % (classifier, metrics.classification_report(test_dataset["labels"], predicted)))

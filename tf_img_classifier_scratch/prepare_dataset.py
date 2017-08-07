@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import glob,sys,os,shutil
+import glob,sys,os,shutil,argparse
 
 """
 #REMEMBER TO CONVERT TIF TO JPG WITH:
@@ -9,17 +9,35 @@ for f in *.tif; do  echo "Converting $f"; convert "$f"  "$(basename "$f" .tif).j
 
 """
 
-dataset_dir = "/home/gustavo/workspace/coal/dataset/original_jpg"
-destination_dir_train = "./data/original_jpg_structured_train-validation-only"
-destination_dir_test = "./data/original_jpg_structured_test-only"
+ap = argparse.ArgumentParser()
+
+ap.add_argument("-d", "--dataset-destination",
+                required = True,
+                help = "The resulting dataset folder",
+                dest='destination')
+ap.add_argument("-o", "--dataset-origin",
+                required = True,
+                help = "The original dataset",
+                dest='dataset')
+ap.add_argument("-t", "--test-percentage",
+                required = True,
+                help = "The percentage for testing.",
+                dest='test_percent')
+
+args = vars(ap.parse_args())
+
+dataset_dir = args['dataset']
+destination_dir_train =  os.path.join(args['destination'], 'train')
+destination_dir_test = os.path.join(args['destination'], 'test')
 
 if os.path.exists(destination_dir_train) or os.path.exists(destination_dir_test):
     print("ERROR: The destination dataset directories already exist.")
     sys.exit()
 
-images = glob.glob(dataset_dir + "/*.jpg")
+images = glob.glob(dataset_dir + "**/*.jpg")
 
 """
+for testing as 0.3:
 dataset_test = 84
 dataset_training = 138
 dataset_validation = 58
@@ -27,9 +45,11 @@ dataset_validation = 58
 image_number_by_class = 280
 class_number = 10
 class_sequences = 7
-testing_percentage = 0.3
-training_percentage = 0.7
-validation_percentage = 0.3
+testing_percentage = float(args['test_percent'])
+training_percentage = 1.0 - testing_percentage
+
+print("Testing percentage:",testing_percentage)
+print("Training percentage:",training_percentage)
 
 num_testing_by_class =  int(image_number_by_class * testing_percentage)
 num_testing_by_sequence = int(num_testing_by_class / class_sequences)

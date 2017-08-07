@@ -1,0 +1,2 @@
+2017-08-07 00:21:02.259426: I tensorflow/core/kernels/logging_ops.cc:79] eval/Accuracy[0.99777776]
+2017-08-07 00:21:02.259467: I tensorflow/core/kernels/logging_ops.cc:79] eval/Recall_5[1]

@@ -1,0 +1,31 @@
+Predicting...KNN
+Classification KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=3, p=2,
+           weights='uniform'):
+               precision    recall  f1-score   support
+
+      Apuleia       0.84      0.90      0.87        84
+ Aspidosperma       0.87      0.90      0.89        84
+    Astronium       0.85      0.89      0.87        84
+    Byrsonima       0.93      0.88      0.90        84
+  Calophyllum       0.96      0.83      0.89        84
+     Cecropia       0.98      0.96      0.97        84
+   Cedrelinga       0.90      0.93      0.91        84
+Cochlospermum       0.94      0.96      0.95        84
+    Combretum       0.98      0.96      0.97        84
+    Copaifera       1.00      0.98      0.99        84
+
+  avg / total       0.92      0.92      0.92       840
+
+
+Confusion matrix:
+[[76  0  7  0  1  0  0  0  0  0]
+ [ 0 76  0  1  0  1  6  0  0  0]
+ [ 6  0 75  1  1  0  0  0  1  0]
+ [ 0  7  0 74  0  0  3  0  0  0]
+ [ 8  0  3  1 70  1  0  1  0  0]
+ [ 0  0  0  0  0 81  0  3  0  0]
+ [ 0  3  1  1  0  0 78  0  1  0]
+ [ 0  1  0  2  0  0  0 81  0  0]
+ [ 1  0  2  0  0  0  0  0 81  0]
+ [ 0  0  0  0  1  0  0  1  0 82]]

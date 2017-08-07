@@ -142,7 +142,7 @@ if args['need_train'] and 'classifier' not in locals():
     print(train_dataset["labels"][0], train_dataset["class_name"][0])
     # classifier = svm.SVC(C=2.8, gamma=.0073)
     # {'gamma': 8.0, 'C': 2048.0, 'kernel': 'poly'}
-    classifier = svm.SVC(C=2048.0, gamma=8.0, kernel='poly')
+    classifier = svm.SVC(C=2048.0, gamma=8.0, kernel='rbf')
     # classifier = svm.LinearSVC(C=3, random_state=42)
     # classifier = GridSearch(train_dataset["images"], train_dataset["labels"])
     classifier.fit(train_dataset["images"], train_dataset["labels"])

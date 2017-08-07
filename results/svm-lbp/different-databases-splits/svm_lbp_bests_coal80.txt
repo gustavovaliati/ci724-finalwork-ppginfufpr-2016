@@ -1,0 +1,33 @@
+Byrsonima Byrsonima
+Predicting...
+Classification SVC(C=2048, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=8, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+               precision    recall  f1-score   support
+
+      Apuleia       1.00      0.96      0.98        56
+ Aspidosperma       0.92      0.98      0.95        56
+    Astronium       0.95      0.98      0.96        56
+    Byrsonima       0.91      0.86      0.88        56
+  Calophyllum       1.00      0.96      0.98        56
+     Cecropia       1.00      1.00      1.00        56
+   Cedrelinga       0.91      0.95      0.93        56
+Cochlospermum       1.00      0.98      0.99        56
+    Combretum       1.00      0.98      0.99        56
+    Copaifera       0.98      1.00      0.99        56
+
+  avg / total       0.97      0.97      0.97       560
+
+
+Confusion matrix:
+[[54  0  2  0  0  0  0  0  0  0]
+ [ 0 55  0  0  0  0  1  0  0  0]
+ [ 0  0 55  1  0  0  0  0  0  0]
+ [ 0  4  0 48  0  0  4  0  0  0]
+ [ 0  0  1  1 54  0  0  0  0  0]
+ [ 0  0  0  0  0 56  0  0  0  0]
+ [ 0  1  0  2  0  0 53  0  0  0]
+ [ 0  0  0  1  0  0  0 55  0  0]
+ [ 0  0  0  0  0  0  0  0 55  1]
+ [ 0  0  0  0  0  0  0  0  0 56]]

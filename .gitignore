@@ -1,3 +1,8 @@
-*.jpg
-*.png
-*.h5
+**/*.jpg
+**/*.png
+**/*.h5
+**/*.tfrecord
+tf_img_classifier_scratch/cifar-10-batches-py/
+tf_img_classifier_scratch/cifar-10-batches-py/
+tf_img_classifier_scratch/data/
+tf_img_classifier_scratch/tmp/

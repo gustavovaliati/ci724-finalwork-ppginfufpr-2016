@@ -1,0 +1,31 @@
+Classification SVC(C=2048, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=8, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+               precision    recall  f1-score   support
+
+      Apuleia       0.97      0.98      0.98       140
+ Aspidosperma       0.91      0.97      0.94       140
+    Astronium       0.97      0.98      0.98       140
+    Byrsonima       0.91      0.86      0.89       140
+  Calophyllum       0.98      0.93      0.96       140
+     Cecropia       1.00      0.99      1.00       140
+   Cedrelinga       0.92      0.93      0.93       140
+Cochlospermum       0.96      0.99      0.98       140
+    Combretum       1.00      0.99      1.00       140
+    Copaifera       0.99      0.99      0.99       140
+
+  avg / total       0.96      0.96      0.96      1400
+
+
+Confusion matrix:
+[[137   0   2   0   1   0   0   0   0   0]
+ [  0 136   0   2   0   0   2   0   0   0]
+ [  1   0 137   2   0   0   0   0   0   0]
+ [  0   9   0 121   0   0   9   1   0   0]
+ [  3   0   2   1 130   0   0   4   0   0]
+ [  0   0   0   0   0 139   0   1   0   0]
+ [  0   4   0   6   0   0 130   0   0   0]
+ [  0   0   0   1   0   0   0 139   0   0]
+ [  0   0   0   0   0   0   0   0 139   1]
+ [  0   1   0   0   1   0   0   0   0 138]]
