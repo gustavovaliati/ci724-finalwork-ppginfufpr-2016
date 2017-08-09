@@ -1,99 +1,142 @@
-OK but low score for: astronium (score = 0.54589)
-Mistake for: true: Astronium_006_031.jpg label: aspidosperma (score = 0.58847)
-OK but low score for: astronium (score = 0.65173)
-OK but low score for: astronium (score = 0.51895)
-OK but low score for: astronium (score = 0.51837)
-OK but low score for: astronium (score = 0.37310)
-OK but low score for: astronium (score = 0.53594)
-OK but low score for: astronium (score = 0.40131)
-OK but low score for: astronium (score = 0.60691)
-OK but low score for: astronium (score = 0.65439)
-Mistake for: true: Astronium_004_003.jpg label: byrsonima (score = 0.56790)
-OK but low score for: astronium (score = 0.45502)
-OK but low score for: cochlospermum (score = 0.61136)
-OK but low score for: cochlospermum (score = 0.59802)
-Mistake for: true: Cochlospermum_002_026.jpg label: cecropia (score = 0.60310)
-OK but low score for: cochlospermum (score = 0.53020)
-Mistake for: true: Cochlospermum_003_005.jpg label: cecropia (score = 0.65655)
-Mistake for: true: Cochlospermum_006_012.jpg label: byrsonima (score = 0.84596)
-OK but low score for: cochlospermum (score = 0.57696)
-Mistake for: true: Cochlospermum_004_002.jpg label: cecropia (score = 0.80363)
-OK but low score for: cochlospermum (score = 0.67027)
-OK but low score for: cochlospermum (score = 0.58504)
-OK but low score for: byrsonima (score = 0.45782)
-Mistake for: true: Byrsonima_006_002.jpg label: apuleia (score = 0.91631)
-Mistake for: true: Byrsonima_002_005.jpg label: apuleia (score = 0.46326)
-Mistake for: true: Byrsonima_002_016.jpg label: aspidosperma (score = 0.41201)
-OK but low score for: byrsonima (score = 0.60956)
-Mistake for: true: Byrsonima_000_031.jpg label: cochlospermum (score = 0.52665)
-Mistake for: true: Byrsonima_002_003.jpg label: aspidosperma (score = 0.91434)
-OK but low score for: combretum (score = 0.51676)
-Mistake for: true: Combretum_003_013.jpg label: cedrelinga (score = 0.43335)
-Mistake for: true: Combretum_001_023.jpg label: aspidosperma (score = 0.91568)
-OK but low score for: combretum (score = 0.64628)
-OK but low score for: combretum (score = 0.59403)
-OK but low score for: combretum (score = 0.59385)
-Mistake for: true: Calophyllum_001_003.jpg label: combretum (score = 0.41601)
-OK but low score for: calophyllum (score = 0.64484)
-OK but low score for: calophyllum (score = 0.39309)
-OK but low score for: cedrelinga (score = 0.54138)
-OK but low score for: cedrelinga (score = 0.60075)
-Mistake for: true: Cedrelinga_000_037.jpg label: astronium (score = 0.70653)
-OK but low score for: cedrelinga (score = 0.63891)
-OK but low score for: cedrelinga (score = 0.65844)
-Mistake for: true: Cedrelinga_000_020.jpg label: astronium (score = 0.36153)
-OK but low score for: cedrelinga (score = 0.63754)
-OK but low score for: cedrelinga (score = 0.69403)
-Mistake for: true: Cedrelinga_000_012.jpg label: astronium (score = 0.52942)
-OK but low score for: cedrelinga (score = 0.67060)
-Mistake for: true: Cedrelinga_000_026.jpg label: byrsonima (score = 0.71677)
-OK but low score for: cedrelinga (score = 0.51341)
-OK but low score for: copaifera (score = 0.56820)
-Mistake for: true: Copaifera_005_015.jpg label: cedrelinga (score = 0.43518)
-Mistake for: true: Copaifera_005_020.jpg label: calophyllum (score = 0.62643)
-Mistake for: true: Copaifera_005_000.jpg label: astronium (score = 0.50540)
-OK but low score for: copaifera (score = 0.63555)
-OK but low score for: copaifera (score = 0.52745)
-Mistake for: true: Copaifera_003_009.jpg label: combretum (score = 0.48131)
-Mistake for: true: Copaifera_001_014.jpg label: cedrelinga (score = 0.60925)
-OK but low score for: copaifera (score = 0.58559)
-OK but low score for: copaifera (score = 0.55535)
-OK but low score for: copaifera (score = 0.59335)
-Mistake for: true: Cecropia_004_003.jpg label: calophyllum (score = 0.50258)
-Mistake for: true: Aspidosperma_000_007.jpg label: combretum (score = 0.75212)
-OK but low score for: apuleia (score = 0.63988)
-OK but low score for: apuleia (score = 0.63513)
-Mistake for: true: Apuleia_002_014.jpg label: combretum (score = 0.58416)
-Mistake for: true: Apuleia_002_008.jpg label: astronium (score = 0.50278)
-Mistake for: true: Apuleia_004_015.jpg label: astronium (score = 0.64918)
+1400
+OK but low score for: byrsonima (score = 0.67517)
+byrsonima (score = 0.67517)
+byrsonima (score = 0.24878)
+byrsonima (score = 0.02351)
+byrsonima (score = 0.02301)
+OK but low score for: byrsonima (score = 0.64042)
+byrsonima (score = 0.64042)
+byrsonima (score = 0.27061)
+byrsonima (score = 0.06299)
+byrsonima (score = 0.01403)
+OK but low score for: byrsonima (score = 0.60660)
+byrsonima (score = 0.60660)
+byrsonima (score = 0.12283)
+byrsonima (score = 0.12129)
+byrsonima (score = 0.11621)
+OK but low score for: apuleia (score = 0.66241)
+apuleia (score = 0.66241)
+apuleia (score = 0.29789)
+apuleia (score = 0.03285)
+apuleia (score = 0.00258)
+OK but low score for: copaifera (score = 0.63094)
+copaifera (score = 0.63094)
+copaifera (score = 0.28900)
+copaifera (score = 0.04444)
+copaifera (score = 0.02467)
+OK but low score for: copaifera (score = 0.57533)
+copaifera (score = 0.57533)
+copaifera (score = 0.41740)
+copaifera (score = 0.00274)
+copaifera (score = 0.00153)
+OK but low score for: copaifera (score = 0.54722)
+copaifera (score = 0.54722)
+copaifera (score = 0.30136)
+copaifera (score = 0.07386)
+copaifera (score = 0.06046)
+Mistake for: true: Copaifera_005_020.jpg label: calophyllum (score = 0.64588)
+calophyllum (score = 0.64588)
+calophyllum (score = 0.22701)
+calophyllum (score = 0.07360)
+calophyllum (score = 0.02366)
+OK but low score for: cedrelinga (score = 0.49329)
+cedrelinga (score = 0.49329)
+cedrelinga (score = 0.30904)
+cedrelinga (score = 0.05275)
+cedrelinga (score = 0.04526)
+Mistake for: true: Aspidosperma_000_021.jpg label: astronium (score = 0.45319)
+astronium (score = 0.45319)
+astronium (score = 0.37462)
+astronium (score = 0.09268)
+astronium (score = 0.06057)
+OK but low score for: aspidosperma (score = 0.63920)
+aspidosperma (score = 0.63920)
+aspidosperma (score = 0.35922)
+aspidosperma (score = 0.00133)
+aspidosperma (score = 0.00010)
+OK but low score for: aspidosperma (score = 0.50145)
+aspidosperma (score = 0.50145)
+aspidosperma (score = 0.47088)
+aspidosperma (score = 0.01560)
+aspidosperma (score = 0.00960)
+OK but low score for: calophyllum (score = 0.60061)
+calophyllum (score = 0.60061)
+calophyllum (score = 0.34452)
+calophyllum (score = 0.01845)
+calophyllum (score = 0.01808)
+Mistake for: true: Astronium_006_031.jpg label: aspidosperma (score = 0.56227)
+aspidosperma (score = 0.56227)
+aspidosperma (score = 0.38155)
+aspidosperma (score = 0.03789)
+aspidosperma (score = 0.01104)
+OK but low score for: astronium (score = 0.62087)
+astronium (score = 0.62087)
+astronium (score = 0.19405)
+astronium (score = 0.11743)
+astronium (score = 0.03641)
+OK but low score for: astronium (score = 0.64369)
+astronium (score = 0.64369)
+astronium (score = 0.16783)
+astronium (score = 0.11415)
+astronium (score = 0.03471)
+Mistake for: true: Astronium_001_034.jpg label: combretum (score = 0.50596)
+combretum (score = 0.50596)
+combretum (score = 0.46837)
+combretum (score = 0.01300)
+combretum (score = 0.00549)
+OK but low score for: astronium (score = 0.54388)
+astronium (score = 0.54388)
+astronium (score = 0.16246)
+astronium (score = 0.16044)
+astronium (score = 0.06388)
+Mistake for: true: Cochlospermum_006_012.jpg label: byrsonima (score = 0.64125)
+byrsonima (score = 0.64125)
+byrsonima (score = 0.29323)
+byrsonima (score = 0.05900)
+byrsonima (score = 0.00301)
+OK but low score for: cochlospermum (score = 0.63000)
+cochlospermum (score = 0.63000)
+cochlospermum (score = 0.36517)
+cochlospermum (score = 0.00280)
+cochlospermum (score = 0.00116)
+Mistake for: true: Cochlospermum_002_026.jpg label: cecropia (score = 0.82333)
+cecropia (score = 0.82333)
+cecropia (score = 0.14606)
+cecropia (score = 0.01343)
+cecropia (score = 0.00731)
+Mistake for: true: Cochlospermum_002_033.jpg label: cecropia (score = 0.68656)
+cecropia (score = 0.68656)
+cecropia (score = 0.30748)
+cecropia (score = 0.00269)
+cecropia (score = 0.00247)
 Classification:
                 precision    recall  f1-score   support
 
-      apuleia       0.99      0.98      0.98       140
- aspidosperma       0.97      0.99      0.98       140
-    astronium       0.96      0.99      0.97       140
-    byrsonima       0.98      0.96      0.97       140
-  calophyllum       0.99      0.99      0.99       140
-     cecropia       0.98      0.99      0.99       140
-   cedrelinga       0.98      0.97      0.97       140
-cochlospermum       0.99      0.97      0.98       140
-    combretum       0.97      0.99      0.98       140
-    copaifera       1.00      0.96      0.98       140
+      apuleia       1.00      1.00      1.00       140
+ aspidosperma       0.99      0.99      0.99       140
+    astronium       0.99      0.99      0.99       140
+    byrsonima       0.99      1.00      1.00       140
+  calophyllum       0.99      1.00      1.00       140
+     cecropia       0.99      1.00      0.99       140
+   cedrelinga       1.00      1.00      1.00       140
+cochlospermum       1.00      0.98      0.99       140
+    combretum       0.99      1.00      1.00       140
+    copaifera       1.00      0.99      1.00       140
 
-  avg / total       0.98      0.98      0.98      1400
+  avg / total       1.00      0.99      0.99      1400
 
 
 Confusion matrix:
-[[137   0   2   0   0   0   0   0   1   0]
- [  0 139   0   0   0   0   0   0   1   0]
- [  0   1 138   1   0   0   0   0   0   0]
- [  2   2   0 135   0   0   0   1   0   0]
- [  0   0   0   0 139   0   0   0   1   0]
- [  0   0   0   0   1 139   0   0   0   0]
- [  0   0   3   1   0   0 136   0   0   0]
- [  0   0   0   1   0   3   0 136   0   0]
- [  0   1   0   0   0   0   1   0 138   0]
- [  0   0   1   0   1   0   2   0   1 135]]
+[[140   0   0   0   0   0   0   0   0   0]
+ [  0 139   1   0   0   0   0   0   0   0]
+ [  0   1 138   0   0   0   0   0   1   0]
+ [  0   0   0 140   0   0   0   0   0   0]
+ [  0   0   0   0 140   0   0   0   0   0]
+ [  0   0   0   0   0 140   0   0   0   0]
+ [  0   0   0   0   0   0 140   0   0   0]
+ [  0   0   0   1   0   2   0 137   0   0]
+ [  0   0   0   0   0   0   0   0 140   0]
+ [  0   0   0   0   1   0   0   0   0 139]]
 Total of testing images:  1400
-Total of wrong guesses:  28
-Success rate:  98.0
+Total of wrong guesses:  7
+Success rate:  99.5
