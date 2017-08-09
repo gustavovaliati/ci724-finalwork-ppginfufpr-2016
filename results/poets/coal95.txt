@@ -1,0 +1,57 @@
+140
+Mistake for: true: Copaifera_001_014.jpg label: cedrelinga (score = 0.54089)
+cedrelinga (score = 0.54089)
+cedrelinga (score = 0.45180)
+cedrelinga (score = 0.00221)
+cedrelinga (score = 0.00205)
+OK but low score for: calophyllum (score = 0.49369)
+calophyllum (score = 0.49369)
+calophyllum (score = 0.18734)
+calophyllum (score = 0.18588)
+calophyllum (score = 0.08172)
+OK but low score for: astronium (score = 0.49910)
+astronium (score = 0.49910)
+astronium (score = 0.48657)
+astronium (score = 0.00508)
+astronium (score = 0.00303)
+Mistake for: true: Cochlospermum_006_012.jpg label: byrsonima (score = 0.71149)
+byrsonima (score = 0.71149)
+byrsonima (score = 0.22769)
+byrsonima (score = 0.05307)
+byrsonima (score = 0.00441)
+Mistake for: true: Cochlospermum_004_002.jpg label: cecropia (score = 0.72684)
+cecropia (score = 0.72684)
+cecropia (score = 0.17900)
+cecropia (score = 0.08382)
+cecropia (score = 0.00356)
+Classification:
+                precision    recall  f1-score   support
+
+      apuleia       1.00      1.00      1.00        14
+ aspidosperma       1.00      1.00      1.00        14
+    astronium       1.00      1.00      1.00        14
+    byrsonima       0.93      1.00      0.97        14
+  calophyllum       1.00      1.00      1.00        14
+     cecropia       0.93      1.00      0.97        14
+   cedrelinga       0.93      1.00      0.97        14
+cochlospermum       1.00      0.86      0.92        14
+    combretum       1.00      1.00      1.00        14
+    copaifera       1.00      0.93      0.96        14
+
+  avg / total       0.98      0.98      0.98       140
+
+
+Confusion matrix:
+[[14  0  0  0  0  0  0  0  0  0]
+ [ 0 14  0  0  0  0  0  0  0  0]
+ [ 0  0 14  0  0  0  0  0  0  0]
+ [ 0  0  0 14  0  0  0  0  0  0]
+ [ 0  0  0  0 14  0  0  0  0  0]
+ [ 0  0  0  0  0 14  0  0  0  0]
+ [ 0  0  0  0  0  0 14  0  0  0]
+ [ 0  0  0  1  0  1  0 12  0  0]
+ [ 0  0  0  0  0  0  0  0 14  0]
+ [ 0  0  0  0  0  0  1  0  0 13]]
+Total of testing images:  140
+Total of wrong guesses:  3
+Success rate:  97.85714285714286

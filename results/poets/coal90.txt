@@ -1,0 +1,77 @@
+280
+Mistake for: true: Apuleia_004_029.jpg label: astronium (score = 0.71375)
+astronium (score = 0.71375)
+astronium (score = 0.26826)
+astronium (score = 0.00655)
+astronium (score = 0.00497)
+Mistake for: true: Copaifera_001_014.jpg label: cedrelinga (score = 0.53493)
+cedrelinga (score = 0.53493)
+cedrelinga (score = 0.45953)
+cedrelinga (score = 0.00170)
+cedrelinga (score = 0.00164)
+OK but low score for: cedrelinga (score = 0.67263)
+cedrelinga (score = 0.67263)
+cedrelinga (score = 0.21518)
+cedrelinga (score = 0.08469)
+cedrelinga (score = 0.00829)
+OK but low score for: cedrelinga (score = 0.49408)
+cedrelinga (score = 0.49408)
+cedrelinga (score = 0.20319)
+cedrelinga (score = 0.15980)
+cedrelinga (score = 0.09683)
+Mistake for: true: Calophyllum_002_025.jpg label: copaifera (score = 0.33688)
+copaifera (score = 0.33688)
+copaifera (score = 0.27440)
+copaifera (score = 0.18720)
+copaifera (score = 0.12720)
+OK but low score for: calophyllum (score = 0.69335)
+calophyllum (score = 0.69335)
+calophyllum (score = 0.22057)
+calophyllum (score = 0.03004)
+calophyllum (score = 0.02743)
+Mistake for: true: Astronium_002_038.jpg label: apuleia (score = 0.55395)
+apuleia (score = 0.55395)
+apuleia (score = 0.43465)
+apuleia (score = 0.00401)
+apuleia (score = 0.00305)
+Mistake for: true: Cochlospermum_006_012.jpg label: byrsonima (score = 0.63386)
+byrsonima (score = 0.63386)
+byrsonima (score = 0.30164)
+byrsonima (score = 0.05604)
+byrsonima (score = 0.00443)
+Mistake for: true: Cochlospermum_004_002.jpg label: cecropia (score = 0.69111)
+cecropia (score = 0.69111)
+cecropia (score = 0.20922)
+cecropia (score = 0.09016)
+cecropia (score = 0.00295)
+Classification:
+                precision    recall  f1-score   support
+
+      apuleia       0.96      0.96      0.96        28
+ aspidosperma       1.00      1.00      1.00        28
+    astronium       0.96      0.96      0.96        28
+    byrsonima       0.97      1.00      0.98        28
+  calophyllum       1.00      0.96      0.98        28
+     cecropia       0.97      1.00      0.98        28
+   cedrelinga       0.97      1.00      0.98        28
+cochlospermum       1.00      0.93      0.96        28
+    combretum       1.00      1.00      1.00        28
+    copaifera       0.96      0.96      0.96        28
+
+  avg / total       0.98      0.98      0.98       280
+
+
+Confusion matrix:
+[[27  0  1  0  0  0  0  0  0  0]
+ [ 0 28  0  0  0  0  0  0  0  0]
+ [ 1  0 27  0  0  0  0  0  0  0]
+ [ 0  0  0 28  0  0  0  0  0  0]
+ [ 0  0  0  0 27  0  0  0  0  1]
+ [ 0  0  0  0  0 28  0  0  0  0]
+ [ 0  0  0  0  0  0 28  0  0  0]
+ [ 0  0  0  1  0  1  0 26  0  0]
+ [ 0  0  0  0  0  0  0  0 28  0]
+ [ 0  0  0  0  0  0  1  0  0 27]]
+Total of testing images:  280
+Total of wrong guesses:  6
+Success rate:  97.85714285714286
